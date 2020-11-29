@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "quantityfield",
+    "pint_examples",
 ]
 
 MIDDLEWARE = [
@@ -128,3 +130,4 @@ USE_TZ = True
 STATIC_URL = "/static/"
 DJANGO_PINT_UNIT_REGISTER = UnitRegistry()
 DJANGO_PINT_UNIT_REGISTER.define("beer_bootle_weight = 0.8 * kg = beer")
+DJANGO_PINT_UNIT_REGISTER.define("finger = 0.01 * meter")
