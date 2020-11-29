@@ -48,4 +48,6 @@ MANIFEST
 
 # Per-project virtualenvs
 .venv*/
-/django_pint_example/local.py
+# Security relavant settings and django default database
+src/django_pint_example/local.py
+src/db.sqlite3
