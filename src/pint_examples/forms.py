@@ -1,4 +1,4 @@
-from django.forms import ModelForm
+from django.forms import Form, ModelForm
 
 from quantityfield.fields import QuantityFormField
 
@@ -13,3 +13,7 @@ class BoxModelForm(ModelForm):
     class Meta:
         model = Box
         exclude = []
+
+
+class SimpleForm(Form):
+    hello = QuantityFormField(base_units="kilogram", required=False)
